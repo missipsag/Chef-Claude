@@ -1,0 +1,41 @@
+.form-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+   
+    margin-top: 20px;
+    height: 80px;
+    
+}
+
+.form-part input[type="text"] {
+    height: 30%;
+    width: 60%;
+    border-radius: 5Px;
+    border:1px solid  rgb(116, 114, 114) ;
+    padding: 0 20px;
+    flex-grow: 1;
+    min-width: 150px;
+    max-width:300px ;
+}
+
+
+.form-part input[type="submit"] {
+    height: 32%;
+    font-family: inherit;
+    font-size: 0.875rem;
+
+    background-color: black;
+    color: whitesmoke;
+    padding: 5px 10px 15px 10px;
+    width: 25%;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    flex-grow: 1;
+    max-width: 150px;
+    min-width: 130px;
+
+}
+

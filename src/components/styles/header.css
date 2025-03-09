@@ -1,0 +1,25 @@
+.header {
+    height: 60px;
+    background-color: beige;
+    overflow: hidden;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.header .chef-claude-img {
+    height: 100%;
+    width: 40px;
+}
+
+.header .header-text {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
