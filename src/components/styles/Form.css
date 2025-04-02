@@ -1,28 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 50px  20px;
+    height: 100lvh;
+    flex-wrap: nowrap;
+    width: auto;
+    
+}
+
+
+
 .form-part {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2%;
-   
+
     margin-top: 20px;
-    height: 80px;
+    height: 2rem;
+    
     
 }
 
 .form-part input[type="text"] {
-    height: 30%;
+    height: 100%;
+    box-sizing: border-box;
     width: 60%;
-    border-radius: 5Px;
+    border-radius: 5px;
     border:1px solid  rgb(116, 114, 114) ;
     padding: 0 20px;
-    flex-grow: 1;
+    flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: 2;
     min-width: 150px;
-    max-width:300px ;
+    max-width:300px;
+    
 }
 
 
-.form-part input[type="submit"] {
-    height: 32%;
+.form-part input[type="submit"] { 
+    height: 100%;
     font-family: inherit;
     font-size: 0.875rem;
 
@@ -34,8 +57,62 @@
     border: none;
     text-align: center;
     flex-grow: 1;
+    flex-shrink: 3;
     max-width: 150px;
     min-width: 130px;
 
 }
 
+.ingredients-text {
+    margin-bottom: 20px;
+}
+
+
+.buttom-section {
+    padding: 10px 20px;
+    background-color: rgba(128, 128, 128, 0.137);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+}
+
+.buttom-section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: last  baseline;
+}
+
+.buttom-section button {
+    background-color: rgb(243, 108, 59);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font: inherit;
+    font-weight: inherit;
+    width: fit-content;
+    text-wrap: nowrap;
+    margin-left: 20px;
+
+}
+
+.ingredients-part {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2rem;
+}
+
+.ingredients-list {
+ width: 100%;
+
+}
+
+    
+.ingredients-list:nth-child(n){
+    margin-top: 5px;
+}
