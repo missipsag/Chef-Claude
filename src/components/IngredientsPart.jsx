@@ -12,7 +12,7 @@ export default function IngredientsPart({ingredients}) {
               <h2 className='ingredients-text'>Ingredients on hand :</h2>
               <ul className='ingredients-list'> {ingredientsListItems} </ul>
             </>
-          : <h2> Oupss... Looks like you didn't give me ingredients yet </h2> }
+          : <h2> Oupss... Looks like you didn't give me ingredients yet. </h2> }
          
         </section>
   )
