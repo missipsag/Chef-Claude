@@ -1,37 +1,23 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import './styles/Form.css'
-import Body from './Body'
-import { useState } from 'react';
 
-export default function Form() {
-
-  const [ingredients, setIngredients] = useState([]);
+export default function Form({  ingredients, setIngredients }) {
   
-  const ingredientsListItems = ingredients.map(ing => (
-    <li key={ing}> { ing } </li>
-  ))
+ 
 
-  function addIngredient(event) {
+  function addIngredient(formData) {
 
-    event.preventDefault();
-    
-    const formData = new FormData(event.currentTarget);
     const newIngredient = formData.get("ingredient");
     newIngredient && setIngredients([...ingredients, newIngredient]);
-    ingredientsListItems()
-   
-  }
+
+ 
+    }
+
   return (
-    <>
-      <form action="" className='form-part' onSubmit={addIngredient}>
-        <input type="text" name="ingredient" id="form" className='' placeholder=".e.g potatoes" aria-label='ingredient'/>
+      <form  className='form-part' action={addIngredient}>
+        <input type="text" name="ingredient" id="form" className='' placeholder=".e.g potatoes" aria-label='ingredient' autoFocus/>
         <input type="submit" name="" id="" value="+ Add ingredient"  /> 
       </form>   
-      
-      <ul>
-        {ingredientsListItems}
-      </ul>
-    </>
-  )
+      )
     
 }
