@@ -1,0 +1,14 @@
+.recipe-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+
+    font: inherit;
+
+}
+
+.recipe-component .recipe-header {
+    font-size: 1.5rem;
+    
+}
